@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FutureTech Africa Design System - Namibia & Kenya Tech Brand */
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+
+    /* KOKOS/FutureTech Africa deep blue (#022D5E) */
+    --primary: 211 96% 19%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 55% 94%;
+    --secondary-foreground: 211 96% 18%;
+
+    --muted: 213 25% 94%;
+    --muted-foreground: 213 15% 40%;
+
+    /* KOKOS/FutureTech Africa orange accent (#FD8804) */
+    --accent: 32 98% 50%;
+    --accent-foreground: 211 96% 12%;
+
+    /* KOKOS/FutureTech Africa gold highlight (#FCBE03), used sparingly */
+    --gold: 45 98% 50%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 213 20% 88%;
+    --input: 213 20% 88%;
+    --ring: 211 96% 19%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(211 96% 19%) 0%, hsl(211 96% 10%) 100%);
+    --card-shadow: 0 4px 24px -4px hsl(211 96% 19% / 0.12);
+    --card-hover-shadow: 0 12px 32px -8px hsl(211 96% 19% / 0.2);
+    --glow: 0 0 40px hsl(32 98% 50% / 0.3);
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 213 20% 95%;
+
+    --card: 220 25% 12%;
+    --card-foreground: 213 20% 95%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 213 20% 95%;
+
+    --primary: 32 98% 50%;
+    --primary-foreground: 220 25% 8%;
+
+    --secondary: 213 40% 18%;
+    --secondary-foreground: 213 20% 95%;
+
+    --muted: 213 40% 18%;
+    --muted-foreground: 213 20% 60%;
+
+    --accent: 32 98% 50%;
+    --accent-foreground: 220 25% 8%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 213 40% 20%;
+    --input: 213 40% 20%;
+    --ring: 32 98% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    /* True page backdrop, independent of the --background token used by
+       bg-background elsewhere. Every section paints its own opaque
+       background over this, except the hero, which stays transparent so
+       the fixed particles canvas shows through against brand navy. */
+    background-color: hsl(var(--primary));
+  }
+
+  body {
+    /* No opaque bg-background here: individual sections paint their own
+       background, and leaving body transparent lets the navy html
+       backdrop (and the particles above it) show through the hero. */
+    @apply text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
