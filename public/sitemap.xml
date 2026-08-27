@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://futuretechafrica.com/</loc>
+    <loc>https://kitocha.com/</loc>
   </url>
+
   <url>
-    <loc>https://futuretechafrica.com/courses</loc>
+    <loc>https://hosting.kitocha.com/</loc>
   </url>
+
   <url>
-    <loc>https://futuretechafrica.com/writeups</loc>
+    <loc>https://hosting.kitocha.com/search</loc>
   </url>
+
   <url>
-    <loc>https://futuretechafrica.com/namibia</loc>
+    <loc>https://hosting.kitocha.com/transfer</loc>
   </url>
+
   <url>
-    <loc>https://futuretechafrica.com/kenya</loc>
+    <loc>https://hosting.kitocha.com/domains</loc>
   </url>
+
+  <url>
+    <loc>https://hosting.kitocha.com/hosting</loc>
+  </url>
+
+  <url>
+    <loc>https://hosting.kitocha.com/pricing</loc>
+  </url>
+
 </urlset>
